@@ -1,4 +1,5 @@
 import java.util.Locale;
+import java.util.Random;
 import java.util.Scanner;
 
 public class NightOut {
@@ -29,8 +30,43 @@ public class NightOut {
             }
             while (!answer.equals("NEIN"));
             System.out.println("Du hast genug getrunken und gehst Bowling spielen, deine Anzahl an Bier beträgt " + drinks);
-        }else {
+        }
+        else {
             System.out.println("Du gehst direkt zur Bowlingbahn");
         }
+        if (drinks <4) {
+            Random random = new Random();
+            System.out.println("Du fühlst dich noch gut genug zum bowlen, also lass uns los legen");
+            int dice = random.nextInt(11);
+            switch (dice) {
+                    case 0:
+                        System.out.println("Miss");break;
+                    case 1:
+                        System.out.println("Schwacher Treffer");break;
+                    case 2:
+                        System.out.println("Schwacher Treffer");break;
+                    case 3:
+                        System.out.println("Schwacher Treffer");break;
+                    case 4:
+                        System.out.println("Normaler Treffer");break;
+                    case 5:
+                        System.out.println("Normaler Treffer");break;
+                    case 6:
+                        System.out.println("Normaler Treffer");break;
+                    case 7:
+                        System.out.println("Guter Treffer");break;
+                    case 8:
+                        System.out.println("Guter Treffer");break;
+                    case 9:
+                        System.out.println("Guter Treffer");break;
+                    case 10:
+                        System.out.println("X-Strike");break;
+                }
+            }
+
+        }
+
+
+
     }
-}
+
